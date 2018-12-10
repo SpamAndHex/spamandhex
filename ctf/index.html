@@ -115,7 +115,8 @@
 
     const entire = endTime - startTime;
     let passed = now - startTime;
-    passed = passed > entire ? entire : passed;
+    // the line below was removed for compatibility reasons
+    // passed = passed > entire ? entire : passed;
     let percentage = (passed / entire) * 100;
     percentage = Math.round(percentage);
 
