@@ -82,7 +82,7 @@
 
                     <br/>
                     <p>
-                        Date: 2019.04.13-14<br/>
+                        Date: 2019.04.06-07<br/>
                         Format: jeopardy, online
                     </p>
 
@@ -109,8 +109,9 @@
 </div>
 
 <script>
-    const endTime = new Date("2019-04-13 14:00:00").getTime();
-    const startTime = new Date("2018-11-12 14:00:00").getTime();
+    // why JS??? why??? https://stackoverflow.com/questions/1507619/javascript-date-utc-function-is-off-by-a-month
+    const endTime = Date.UTC(2019, 4 - 1, 6, 8);
+    const startTime = Date.UTC(2018, 11 - 1, 12, 8);
     const now = new Date().getTime();
 
     const entire = endTime - startTime;
