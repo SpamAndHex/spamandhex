@@ -2,13 +2,65 @@
 <html>
 <head>
 <title>SpamAndFlags Ultimate Worldwide Championship teaser 2020 - Paprika Edition</title>
+<style>
+@font-face{
+    font-family: perfect-dos;
+    src: url(images/MorePerfectDOSVGA.ttf);
+}
+
+pre{
+    font-family: perfect-dos, monospace;
+    font-size: 16pt;
+    line-height: 98%;
+}
+
+pre b{
+    color: #0000a8;
+    font-weight: normal;
+}
+
+body {
+    background-color: #a8a8a8;
+    color: black;
+}
+</style>
 </head>
-<body style="background-color: black; color: white">
+<body style="background-color: #a8a8a8; color: black">
     <center>
-        <img src="images/logo.jpg">
-        <h1>Soon.</h1>
-        <h3>(2020.05.09)</h3>
-        <img src="images/uc.gif">
+        <pre style="font: url(images/perfect-dos-vga-437.ttf)">
+
+                         <b>Installing SpamAndHex CTF/2</b>                              
+
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                                                                                ║
+║                        Transferring Files from Diskette 2                      ║
+║                                                                                ║
+║                                Please wait...                                  ║
+║                                                                                ║
+║        Current file:                                                           ║
+║        C:\CTF\2020\SAF\v2\index.html                                           ║
+║        ┌──────────────────────────────────────────────────────────────┐        ║
+║        │<b>████████████████████████</b>                                      │        ║
+║        └──────────────────────────────────────────────────────────────┘        ║
+║        0%                              50%                         100%        ║
+║                                                                                ║
+║        Remaining time: <span id=timer>                                                        </span>║
+║                                                                                ║
+╚════════════════════════════════════════════════════════════════════════════════╝
     </center>
+
+<script>
+    setInterval(function() {
+        // Actual starting time is subject to change.
+        var t = new Date("May 9, 2020 10:00:00").getTime() - new Date().getTime();
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((t % (1000 * 60)) / 1000);
+        s = days + " days, " + hours + " hours, " + String(minutes).padStart(2, '0') + " minutes, " + seconds + " seconds";
+
+        document.getElementById('timer').innerText = s.padEnd(56,' ');
+    }, 1000)
+</script>
 </body>
 </html>
