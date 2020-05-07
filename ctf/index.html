@@ -29,38 +29,18 @@ body {
     <center>
         <pre style="font: url(images/perfect-dos-vga-437.ttf)">
 
-                         <b>Installing SpamAndHex CTF/2</b>                              
-
-╔════════════════════════════════════════════════════════════════════════════════╗
-║                                                                                ║
-║                        Transferring Files from Diskette 2                      ║
-║                                                                                ║
-║                                Please wait...                                  ║
-║                                                                                ║
-║        Current file:                                                           ║
-║        C:\CTF\2020\SAF\v2\index.html                                           ║
-║        ┌──────────────────────────────────────────────────────────────┐        ║
-║        │<b>████████████████████████</b>                                      │        ║
-║        └──────────────────────────────────────────────────────────────┘        ║
-║        0%                              50%                         100%        ║
-║                                                                                ║
-║        Remaining time: <span id=timer>                                                        </span>║
-║                                                                                ║
-╚════════════════════════════════════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════════════════════════════════╗
+║                                                                             ║
+║                                                                             ║
+║                                                                             ║
+║                           Installation successful!                          ║
+║                                                                             ║
+║                        <a href="https://ctf.spamandhex.com">Continue to the CTF site &gt; &gt; &gt;</a>                       ║
+║                                                                             ║
+║                                                                             ║
+║                                                                             ║
+╚═════════════════════════════════════════════════════════════════════════════╝
     </center>
 
-<script>
-    setInterval(function() {
-        // Friday 18:00 UTC
-        var t = Date.UTC(2020, 4, 8, 18, 00) - new Date().getTime();
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
-        var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((t % (1000 * 60)) / 1000);
-        s = days + " days, " + hours + " hours, " + String(minutes).padStart(2, '0') + " minutes, " + seconds + " seconds";
-
-        document.getElementById('timer').innerText = s.padEnd(56,' ');
-    }, 1000)
-</script>
 </body>
 </html>
